@@ -1,0 +1,17 @@
+{
+  "name": "blog-backend",
+  "version": "1.0.0",
+  "description": "Backend para el blog de nodejs de openlab",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "blog",
+    "backend",
+    "node",
+    "openlab"
+  ],
+  "author": "Charlie",
+  "license": "MIT"
+}
