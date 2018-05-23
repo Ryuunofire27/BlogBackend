@@ -4,7 +4,8 @@
   "description": "Backend para el blog de nodejs de openlab",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "supervisor server.js"
   },
   "keywords": [
     "blog",
@@ -13,5 +14,16 @@
     "openlab"
   ],
   "author": "Charlie",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "bcrypt-nodejs": "0.0.3",
+    "body-parser": "^1.18.3",
+    "cors": "^2.8.4",
+    "express": "^4.16.3",
+    "express-fileupload": "^0.4.0",
+    "mongoose": "^5.1.1"
+  },
+  "devDependencies": {
+    "supervisor": "^0.12.0"
+  }
 }
