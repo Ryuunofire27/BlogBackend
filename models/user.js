@@ -9,7 +9,7 @@ class UserModel{
         const newUser = new User(user);
         newUser.save((err) => {
           if(err) return cb(err);
-          cb(null, { msg: 'Registrado exitosamente' });
+          cb(null, newUser);
         });
       })
       .catch(err => cb(err));

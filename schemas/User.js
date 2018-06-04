@@ -13,7 +13,7 @@ const userSchema = new mongoose.Schema({
   passwordResetToken: String,
   passwordResetExpres: Date,
   picture: { type: String, default: 'https://cdn-images-1.medium.com/max/512/1*6kK9j74vyOmXYm1gN6ARhQ.png'},
-}, { timestamps: true });
+}, { timestamps: true , versionKey: false});
 
 userSchema.methods.comparePassword = (userPassword, pssw, cb) => {
   const hmac = crypto.createHmac('sha256', key);

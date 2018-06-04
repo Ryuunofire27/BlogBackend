@@ -17,9 +17,10 @@ class UserController{
     const hmac = crypto.createHmac('sha256', key);
     hmac.update(user.password);
     user.password = hmac.digest('hex');
-    um.register(user, (err, data) => {
+    um.register(user, (err, newUser) => {
+      console.log(newUser);
       if(err) return res.status(500).send(err);
-      res.send(data);
+      res.send(newUser);
     });
   }
 
